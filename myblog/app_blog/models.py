@@ -51,7 +51,7 @@ class Article(models.Model):
 
 class ArticleImage(models.Model):
    article = models.ForeignKey(Article, verbose_name=u'Стаття', related_name='images', on_delete=models.CASCADE)
-   image = models.ImageField(u'Фото', upload_to='photos')
+   image = models.ImageField(u'Фото', null=True, blank=True, upload_to='photos')
    title = models.CharField(u'Заголовок', max_length=250, help_text=u'Максимум 250 сим.', blank=True)
 
    class Meta:
