@@ -124,22 +124,22 @@ USE_TZ = True
 # STATIC
 
 STATIC_URL = 'static/'
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
-    ]
-else:
-    # if sys.argv[1] != 'runserver':
-    #     STATIC_ROOT = os.path.join(BASE_DIR, "static")
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# if DEBUG:
+#     STATICFILES_DIRS = [
+#         os.path.join(BASE_DIR, 'static')
+#     ]
+# else:
+#     # if sys.argv[1] != 'runserver':
+#     #     STATIC_ROOT = os.path.join(BASE_DIR, "static")
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # MEDIA
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 

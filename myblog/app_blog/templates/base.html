@@ -14,6 +14,11 @@
 	<body>
 		<div class="container">
 			<h1>Персональний блог</h1>
+			<ol class="breadcrumb">
+				<li><a href="/">Головна</a></li>
+				<li><a href="{% url 'articles-list' %}">Публікації</a></li>
+				<li>{{ item.title|upper }}</li>
+			</ol>
 			{% block content%} {% endblock %}
 		</div>
 

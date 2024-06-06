@@ -38,7 +38,7 @@ class ArticleAdmin(admin.ModelAdmin):
    fieldsets = (
       ('', {
          'fields': ('pub_date', 'title', 'description', 
-            'main_page'),
+            'main_page', 'category'),
       }),
       ((u'Додатково'), {
          'classes': ('grp-collapse grp-closed',),
